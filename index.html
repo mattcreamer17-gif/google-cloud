@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>A read on where agents fit in your customers' stacks. For Google Cloud.</title>
+  <meta name="description" content="Kurian said on Big Technology that 65% of your customers are using AI meaningfully, which is the polite way of saying 35% have the license and no production workflow. We have a methodology for moving the bottom half." />
+  <meta name="robots" content="noindex, nofollow" />
+  <meta property="og:title" content="A read on where agents fit in your customers' stacks, and where they don't yet." />
+  <meta property="og:description" content="For Google Cloud. Prepared for Matt Creamer, Eduba." />
+  <meta property="og:type" content="website" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="logo.svg" type="image/svg+xml" />
+</head>
+<body>
+
+  <!-- ============ Topbar ============ -->
+  <header class="topbar" role="banner">
+    <div class="topbar-inner">
+      <a class="brandmark" href="#" aria-label="Google Cloud">
+        <img src="logo.svg" alt="Google Cloud" />
+        <span class="sep" aria-hidden="true"></span>
+        <span class="for">for partner teams</span>
+      </a>
+      <a class="topbar-cta" href="https://calendly.com/thecro-eduba/30min" target="_blank" rel="noopener" aria-label="Book 30 minutes with Matt Creamer">
+        Book 30 min
+      </a>
+    </div>
+  </header>
+
+  <!-- ============ Hero ============ -->
+  <section class="hero">
+    <div class="hero-inner">
+      <div>
+        <span class="eyebrow"><span class="dot" aria-hidden="true"></span>Prepared for the Google Cloud partner conversation</span>
+        <h1>A read on where agents fit in your customers' stacks, and where they don't yet.</h1>
+        <p class="lede">Google Cloud closed Q4 2025 with $17.7B in revenue and a $240B backlog. ADK, Agentspace, Gemini Enterprise, and Vertex AI Agent Builder are shipping on a quarterly cadence. The customer question underneath all of that is the same one BBVA and HCA Healthcare are working through right now. Which parts of a workflow actually want an agent, which parts want traditional code, and which parts should stay human.</p>
+        <div class="hero-ctas">
+          <a class="btn-primary" href="https://calendly.com/thecro-eduba/30min" target="_blank" rel="noopener">
+            Book 30 min with Matt Creamer
+            <span class="arrow" aria-hidden="true">&rarr;</span>
+          </a>
+          <a class="btn-secondary" href="#frame">
+            See the 60 / 30 / 10 read
+          </a>
+        </div>
+      </div>
+
+      <!-- Decorative product card mock, no image dependency -->
+      <div class="hero-visual" aria-hidden="true">
+        <div class="hero-card main">
+          <div class="card-chiprow">
+            <span class="chip"><span class="swatch sw-blue"></span>Vertex AI</span>
+            <span class="chip"><span class="swatch sw-green"></span>ADK</span>
+            <span class="chip"><span class="swatch sw-yellow"></span>Agentspace</span>
+          </div>
+          <div>
+            <div class="card-title">Workflow layer map</div>
+            <div class="bar-stack">
+              <div class="bar-row">
+                <span>Code + DB</span>
+                <span class="bar-track"><span class="bar-fill bar-60"></span></span>
+                <span>60%</span>
+              </div>
+              <div class="bar-row">
+                <span>Rules</span>
+                <span class="bar-track"><span class="bar-fill bar-30"></span></span>
+                <span>30%</span>
+              </div>
+              <div class="bar-row">
+                <span>Agents</span>
+                <span class="bar-track"><span class="bar-fill bar-10"></span></span>
+                <span>10%</span>
+              </div>
+            </div>
+          </div>
+          <div class="card-foot">audit.layer.map | ICM L0 &rarr; L4 | reproducible</div>
+        </div>
+
+        <div class="hero-card float">
+          <div class="float-label">Adoption 30d</div>
+          <div class="float-value">95%</div>
+          <div class="float-sub"><span class="float-dot"></span>Still using tools after workshop</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ The frame ============ -->
+  <section class="frame" id="frame">
+    <div class="container">
+      <div class="section-eyebrow">The Eduba frame</div>
+      <h2 class="section-title">We call it the 60 / 30 / 10 read.</h2>
+      <p class="section-lede">Most enterprise workflows break down cleanly when you ask which layer each part belongs on. Skip the distinction and teams burn Gemini tokens on problems Postgres would solve in 40 milliseconds, and miss the real agentic opportunity hiding under the compliance and handoff work.</p>
+
+      <div class="frame-grid">
+        <div class="frame-card">
+          <div class="share blue">60%</div>
+          <div class="layer">Traditional code and data</div>
+          <div class="describe">The work that belongs on Postgres, BigQuery, or plain application logic. Fast, cheap, guaranteed.</div>
+          <div class="frame-meter blue"><span></span></div>
+        </div>
+        <div class="frame-card">
+          <div class="share green">30%</div>
+          <div class="layer">Rule-based logic</div>
+          <div class="describe">Decision trees, routing, policy enforcement. Deterministic, auditable, boring in the useful way.</div>
+          <div class="frame-meter green"><span></span></div>
+        </div>
+        <div class="frame-card">
+          <div class="share yellow">10%</div>
+          <div class="layer">Genuine agent territory</div>
+          <div class="describe">The work where Gemini, ADK, and Agentspace actually earn their keep. Judgment, synthesis, multi-step reasoning.</div>
+          <div class="frame-meter yellow"><span></span></div>
+        </div>
+      </div>
+
+      <div class="deliverables">
+        <h3>Applied to a Vertex AI and ADK customer, the engagement produces three deliverables.</h3>
+        <div class="deliv-list">
+          <div>
+            <span class="deliv-num">01</span>
+            <div class="deliv-text"><strong>Layer map of the target workflow</strong>Each step tagged with the layer it should live on, with the reasoning written down.</div>
+          </div>
+          <div>
+            <span class="deliv-num">02</span>
+            <div class="deliv-text"><strong>Governance framework keyed to ADK</strong>A context architecture the internal audit team can read, keyed to the ADK agent structure.</div>
+          </div>
+          <div>
+            <span class="deliv-num">03</span>
+            <div class="deliv-text"><strong>Prioritized build list</strong>Which agents to ship first, which to defer, and which not to build at all.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ Case study ============ -->
+  <section class="case">
+    <div class="container">
+      <div class="section-eyebrow">Relevant case study</div>
+      <div class="case-inner">
+        <div>
+          <p class="case-quote">Correlation One partnered with Eduba to train 1,500+ people at Pacific Life and Colgate-Palmolive beginning May 2025. The shape of the engagement Google Cloud field teams ask for when a Gemini Enterprise deployment crosses 10,000 seats and the adoption curve has to actually bend.</p>
+          <div class="case-attrib">
+            <span class="who">Pacific Life. Colgate-Palmolive. Correlation One.</span><br/>
+            Enterprise AI enablement, regulated industries.
+          </div>
+        </div>
+        <div class="metrics">
+          <div class="metric accent-blue">
+            <div class="label">Trained since May 2025</div>
+            <div class="value">1,500+</div>
+            <div class="sub">Across enterprise cohorts</div>
+          </div>
+          <div class="metric accent-green">
+            <div class="label">Hours saved per year</div>
+            <div class="value">6K to 9K</div>
+            <div class="sub">Reported by client teams</div>
+          </div>
+          <div class="metric accent-yellow">
+            <div class="label">Adoption at 30 days</div>
+            <div class="value">95%</div>
+            <div class="sub">Still using tools post-workshop</div>
+          </div>
+          <div class="metric">
+            <div class="label">Secondary reference</div>
+            <div class="value" style="font-size:22px;line-height:1.2;">KPMG UK</div>
+            <div class="sub">One of the Big Four. 40+ executives trained.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ Paper ============ -->
+  <section class="paper">
+    <div class="container">
+      <div class="section-eyebrow">Relevant paper</div>
+      <div class="paper-card">
+        <div>
+          <div class="paper-meta">
+            <span class="tag">ACM TiiS submission</span>
+            <span class="tag">MIT licensed repo</span>
+            <span class="tag">Open agent framework fit</span>
+          </div>
+          <h3>Interpretable Context Methodology (ICM).</h3>
+          <p>Eduba's methodology treats agent context as a layered filesystem (L0 identity through L4 working artifacts) with measurable interpretability and reproducibility gains. The kind of governance substrate a Vertex AI or ADK-based deployment needs to pass an internal audit.</p>
+          <div class="paper-links">
+            <a href="https://github.com/RinDig/Interpretable-Context-Methodology-ICM-" target="_blank" rel="noopener">github.com / ICM repo</a>
+            <a href="https://cloud.google.com/vertex-ai" target="_blank" rel="noopener">Vertex AI docs</a>
+            <a href="https://developers.googleblog.com/en/supercharge-your-ai-agents-adk-integrations-ecosystem/" target="_blank" rel="noopener">ADK ecosystem</a>
+          </div>
+        </div>
+        <div class="arch-panel" role="img" aria-label="ICM layered filesystem schematic">
+          <div class="row"><span class="k">L0</span><span class="v hi-blue">identity.md</span></div>
+          <div class="row"><span class="k">L1</span><span class="v">policy / governance</span></div>
+          <div class="row"><span class="k">L2</span><span class="v">stage contracts</span></div>
+          <div class="row"><span class="k">L3</span><span class="v hi-green">reference factory</span></div>
+          <div class="row"><span class="k">L4</span><span class="v">working artifacts</span></div>
+          <div class="row"><span class="pipe">|</span><span class="v" style="color:var(--gc-muted);font-size:12px;">auditable . reproducible . layered</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ Credibility strip ============ -->
+  <section class="creds">
+    <div class="container">
+      <div class="creds-grid">
+        <div class="cred">
+          <div class="num blue">ACM TiiS</div>
+          <div class="txt">ICM methodology submitted. Open repo under MIT license.</div>
+        </div>
+        <div class="cred">
+          <div class="num green">arXiv</div>
+          <div class="txt">Ethics Engine, a psychometric assessment tool for evaluating ideological and moral patterns in LLMs, at <a href="https://arxiv.org/abs/2510.11742" target="_blank" rel="noopener">arxiv.org/abs/2510.11742</a> with the repo at <a href="https://github.com/RinDig/AuditEngine" target="_blank" rel="noopener">github.com/RinDig/AuditEngine</a>.</div>
+        </div>
+        <div class="cred">
+          <div class="num yellow">Edinburgh</div>
+          <div class="txt">MSc Future Governance. Marine Corps veteran, 8 years in cryptographic systems and F-35 / F-18 avionics.</div>
+        </div>
+        <div class="cred">
+          <div class="num">Partnership</div>
+          <div class="txt">Eduba partners with NLP Logix for work that sits below the orchestration layer. NLP Logix has been in machine learning since 2011 and runs over 150 data scientists.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CTA ============ -->
+  <section class="cta">
+    <div class="cta-card">
+      <div class="cta-eyebrow">Next step</div>
+      <h2>30 minutes with Matt Creamer.</h2>
+      <p>A partner-to-partner conversation about where methodology-first services fit in the 2026 Partner Network, and which accounts would benefit from an ICM-based orchestration audit before the next Gemini Enterprise rollout.</p>
+      <div class="bring">
+        Bring one customer account where Gemini Enterprise or ADK is deployed, adoption is flat, and you need a partner posture faster than the big-SI timeline.
+      </div>
+      <div class="cta-row">
+        <a class="btn-primary" href="https://calendly.com/thecro-eduba/30min" target="_blank" rel="noopener">
+          Book 30 min
+          <span class="arrow" aria-hidden="true">&rarr;</span>
+        </a>
+        <div class="cta-host">
+          <span class="avatar" aria-hidden="true">MC</span>
+          <div>
+            <span class="name">Matt Creamer</span>
+            <span>Chief Revenue Officer, Eduba</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ Footer ============ -->
+  <footer class="foot" role="contentinfo">
+    <div class="foot-inner">
+      <div>Prepared by Eduba. <a href="https://eduba.io" target="_blank" rel="noopener">eduba.io</a></div>
+      <div>For the Google Cloud partner conversation at eMerge Americas 2026.</div>
+    </div>
+  </footer>
+
+</body>
+</html>
